@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.VerificationActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan kode OTP yang telah kami SMS ke nomor "
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:textColor="@color/dark1"
+        android:lines="1"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="+62-12345678901"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:textColor="@color/dark1"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="center_horizontal"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pv_OTPcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemWidth="45dp"
+        app:itemHeight="74dp"
+        app:itemCount="6"
+        app:itemRadius="5dp"
+        app:itemSpacing="10dp"
+        app:lineColor="@color/grey3"
+        android:itemBackground="@color/white"
+        style="@style/PinWidget.PinView"
+        android:inputType="number"
+        android:cursorVisible="true"
+        app:hideLineWhenFilled="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="24sp"
+        android:textColor="@color/dark1"
+        android:textAlignment="center"
+        android:includeFontPadding="false"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kode OTP berlaku hingga"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@color/dark1"/>
+
+    <TextView
+        android:id="@+id/tv_countdownOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="01:00"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/dark1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim ulang kode OTP"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@color/dark1"/>
+
+    <TextView
+        android:id="@+id/tv_viasms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Via SMS"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellow_main"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_viawa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Via Whats app"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellow_main"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_viaphonecall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telepon saya"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellow_main"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/btn_verifyOTP"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/blue_main"
+            android:layout_marginTop="17dp"
+            android:text="Konfirmasi"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_border"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
