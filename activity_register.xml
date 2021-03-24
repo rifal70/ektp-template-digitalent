@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.RegisterActivity"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_maskgroup_login"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo2"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/dark1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silahkan daftar untuk dapat mengakses \nE-KTP Online"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/grey5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <EditText
+                android:id="@+id/et_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Nama Lengkap Anda"
+                android:inputType="textCapWords"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/grey3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Email Anda"
+                android:inputType="textEmailAddress|textCapSentences"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/grey3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Handphone"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <EditText
+                android:id="@+id/et_nohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan No. Handphone Anda"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/grey3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Kartu Keluarga"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <EditText
+                android:id="@+id/et_kk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan No. Kartu Keluarga Anda"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/grey3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/grey3"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Password Anda"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/grey3"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/round_border_soft" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey2"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/grey3"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukan Kembali Password Anda"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/grey3"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="12dp"
+                    android:background="@drawable/round_border_soft" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <CheckBox
+                android:id="@+id/cb_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_syarat_ketentuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saya menyatakan bahwa telah menyetujui \nSyarat &amp; Ketentuan yang berlaku di E-KTP Online"
+                android:textSize="12sp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/grey2"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/blue_main"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/dark2"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
