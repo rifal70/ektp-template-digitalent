@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@drawable/gradient_color_0"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color_90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buat KTP Baru"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor."
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="185dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Buat KTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color_90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update KTP"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor."
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="185dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Update KTP"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_color_90"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lacak Status KTP"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor."
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="185dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Lihat Status"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark2"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_line2"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tata Cara Pembuatan \nKTP Online"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/grey1"
+            android:layout_gravity="center"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/soft_blue"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_alur_pembuatan_ktp"/>
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelurahan Terdekat"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/grey1"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
