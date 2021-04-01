@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/img_top"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/img_kdn"
+            android:orientation="horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cardcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_tatacara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TATA CARA PEMBUATAN \nKTP ONLINE"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@id/rv_cardcategory"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"
+            android:textColor="@color/yellow_main"/>
+
+        <ImageView
+            android:id="@+id/iv_tatacara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tatacara"
+            android:layout_below="@+id/tv_tatacara"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_kelurahanterdekat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_tatacara"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:background="@color/white_soft"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KELURAHAN TERDEKAT"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="23dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="18sp"
+                android:textColor="@color/yellow_main" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="426dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:liteMode="true"
+                    app:mapType="normal"/>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_downloadFormulir"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/blue_main"
+                android:text="Download Formulir Dinas Kependudukan"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_beritakependudukan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_kelurahanterdekat"
+            android:text="BERITA KEPENDUDUKAN"
+            android:textStyle="bold"
+            android:layout_marginBottom="23dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"
+            android:textColor="@color/yellow_main" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cardnews"
+            android:layout_below="@id/tv_beritakependudukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/rv_cardnews"
+            android:background="@color/blue_main"/>
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
