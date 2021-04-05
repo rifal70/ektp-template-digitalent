@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">E-KTP</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_string">Sed vel turpis adipiscing penatibus orci neque. Erat sed fermentum ipsum vel quis quam. Nunc etiam dui tortor, non in aliquam lacinia tempor.</string>
+    <string-array name="provinsi">
+        <item>Pilih Provinsi</item>
+        <item>DKI Jakarta</item>
+        <item>Riau</item>
+        <item>Aceh</item>
+        <item>Jambi</item>
+        <item>Bengkulu</item>
+    </string-array>
+
+    <string-array name="kota">
+        <item>Pilih Kota</item>
+        <item>Kota A</item>
+        <item>Kota B</item>
+        <item>Kota C</item>
+        <item>Kota D</item>
+        <item>Kota E</item>
+    </string-array>
+
+    <string-array name="kelurahan">
+        <item>Pilih Kelurahan</item>
+        <item>Kelurahan A</item>
+        <item>Kelurahan B</item>
+        <item>Kelurahan C</item>
+        <item>Kelurahan D</item>
+        <item>Kelurahan E</item>
+    </string-array>
+
+    <string-array name="kecamatan">
+        <item>Pilih Kecamatan</item>
+        <item>Kecamatan A</item>
+        <item>Kecamatan B</item>
+        <item>Kecamatan C</item>
+        <item>Kecamatan D</item>
+        <item>Kecamatan E</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>Pilih Agama</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Protestan</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Konghucu</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Pilih Status Perkawinan</item>
+        <item>Belum Kawin</item>
+        <item>Kawin</item>
+        <item>Cerai Hidup</item>
+        <item>Cerai Mati</item>
+    </string-array>
+
+    <string-array name="kewarganegaraan">
+        <item>Pilih Status Kewarganegaraan</item>
+        <item>WNI</item>
+        <item>WNA</item>
+    </string-array>
+</resources>
