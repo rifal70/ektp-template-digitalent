@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.fragments.buatKTP.DataDiriFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <EditText
+                android:id="@+id/et_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Nama Lengkap Anda"
+                android:inputType="textCapWords"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/gray3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:hint="Masukan Alamat Lengkap Anda"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/gray3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:gravity="top|start"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Provinsi"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_kota"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelurahan"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecamatan"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <EditText
+                android:id="@+id/et_tempatlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Tempat Lahir"
+                android:inputType="textCapWords"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/gray3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir*"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1" />
+
+            <EditText
+                android:id="@+id/et_tanggallahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Tanggal Lahir"
+                android:inputType="date"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/gray3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/custom_datepicker">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_agama"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Perkawinan"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_status"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pekerjaan"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <EditText
+                android:id="@+id/et_pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Pekerjaan"
+                android:inputType="textCapWords"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto"
+                android:textColorHint="@color/gray3"
+                android:layout_marginTop="5dp"
+                android:paddingTop="12dp"
+                android:paddingLeft="16dp"
+                android:paddingBottom="12dp"
+                android:background="@drawable/round_border_soft"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kewarganegaraan"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray1"/>
+
+            <Spinner
+                android:id="@+id/sp_kewarganegaraan"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/custom_spinner"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
